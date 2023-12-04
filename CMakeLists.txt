@@ -96,13 +96,14 @@ add_executable(${PROJECT_NAME} main.cpp
         src/antrenor_fitness.cpp
         src/client.cpp
         src/persoana.cpp
-        src/sala_fitness.cpp
         headers/abonament.hpp
         headers/antrenor.hpp
         headers/antrenor_fitness.hpp
         headers/client.hpp
         headers/persoana.hpp
-        headers/sala_fitness.hpp)
+        headers/sala_fitness.hpp
+        src/sala_fitness.cpp
+)
 
 ###############################################################################
 
