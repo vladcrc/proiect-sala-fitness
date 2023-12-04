@@ -1,8 +1,8 @@
-#include "../headers/abonament.hpp"
+#include "abonament.hpp"
 
-Abonament::Abonament(std::shared_ptr<Persoana> abonat) : abonat(abonat) {
+Abonament::Abonament(std::unique_ptr<Persoana> abonat) : abonat(std::move(abonat)) {
     if (!this->abonat) {
-        throw std::runtime_error("Eroare: Abonamentul nu a putut fi creat. Persoana invalida");
+        throw std::runtime_error("Eroare: Abonamentul nu a putut fi creat. Persoana invalida.");
     }
 }
 
@@ -13,7 +13,7 @@ Abonament::~Abonament() {
 void Abonament::afisareDetaliiAbonament() const {
     try {
         if (!abonat) {
-            throw std::runtime_error("Eroare: Abonamentul nu are un abonat valid");
+            throw std::runtime_error("Eroare: Abonamentul nu are un abonat valid.");
         }
 
         std::cout << "Detalii abonament:\n";

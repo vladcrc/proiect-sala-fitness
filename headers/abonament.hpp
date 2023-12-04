@@ -6,10 +6,10 @@
 
 class Abonament {
 private:
-    std::shared_ptr<Persoana> abonat;
+    std::unique_ptr<Persoana> abonat;
 
 public:
-    Abonament(std::shared_ptr<Persoana> abonat);
+    Abonament(std::unique_ptr<Persoana> abonat);
     ~Abonament();
 
     void afisareDetaliiAbonament() const;
