@@ -1,4 +1,4 @@
-#include "sala_fitness.hpp"
+#include "..headers/sala_fitness.hpp"
 
 // Constructor de inițializare
 SalaFitness::SalaFitness(Antrenor antrenor) : antrenor(antrenor) {}
