@@ -1,4 +1,4 @@
-#include "abonament.hpp"
+#include "../headers/abonament.hpp"
 
 Abonament::Abonament(std::unique_ptr<Persoana> abonat) : abonat(std::move(abonat)) {
     if (!this->abonat) {
